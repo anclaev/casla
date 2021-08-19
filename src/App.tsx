@@ -1,8 +1,15 @@
-const App = () => {
+import Wrapper from "./containers/Wrapper"
+import Styles from "./styles"
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">Hello, world!</header>
-    </div>
+    <>
+      <Styles />
+      <Wrapper>
+        <section>Menu</section>
+        <section>Page</section>
+      </Wrapper>
+    </>
   )
 }
 
