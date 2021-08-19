@@ -1,6 +1,6 @@
 const Hello: React.FC = () => (
   <section>
-    <span>Hello</span>
+    <span></span>
   </section>
 )
 

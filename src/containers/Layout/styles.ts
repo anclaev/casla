@@ -11,13 +11,13 @@ const StyledLayout = styled.div`
     height: inherit;
   }
 
-  & > section:last-child {
+  & > section:nth-child(2) {
     position: relative;
     background: url("${Poster}") center center / cover no-repeat;
     z-index: -2;
   }
 
-  & > section:last-child:after {
+  & > section:nth-child(2):after {
     content: "";
     position: absolute;
     top: 0;

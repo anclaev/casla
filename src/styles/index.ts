@@ -34,6 +34,10 @@ const Styles = createGlobalStyle<IStyles>`
 		color: ${(props) => props.colors?.app?.text || "var(--color-text)"}; 
 		height: 100%;
 	}
+	
+	body {
+		overflow: hidden;
+	}
 
 	
 	::-webkit-scrollbar {

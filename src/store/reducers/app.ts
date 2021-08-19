@@ -13,7 +13,7 @@ export interface IAction extends Action {
 }
 
 const initialState: IAppState = {
-  lang: "ru",
+  lang: "en",
 }
 
 const appReducer = (state: IAppState = initialState, action: IAction) => {
