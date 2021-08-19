@@ -2,7 +2,7 @@ import Poster from "../../assets/imgs/poster.png"
 
 import styled from "styled-components"
 
-const StyledWrapper = styled.div`
+const StyledLayout = styled.div`
   display: grid;
   grid-template-columns: minmax(200px, 260px) 1fr;
   height: inherit;
@@ -14,7 +14,7 @@ const StyledWrapper = styled.div`
   & > section:last-child {
     position: relative;
     background: url("${Poster}") center center / cover no-repeat;
-    z-index: -1;
+    z-index: -2;
   }
 
   & > section:last-child:after {
@@ -26,8 +26,8 @@ const StyledWrapper = styled.div`
     bottom: 0;
     background: #000;
     opacity: 0.3;
-    z-index: 0;
+    z-index: -1;
   }
 `
 
-export default StyledWrapper
+export default StyledLayout
