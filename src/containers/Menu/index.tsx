@@ -1,9 +1,11 @@
+import Styled from "./styles"
+
 import Logo from "../../components/Logo"
 
 const Menu: React.FC = () => (
-  <section>
+  <Styled>
     <Logo />
-  </section>
+  </Styled>
 )
 
 export default Menu

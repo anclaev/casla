@@ -1,9 +1,11 @@
-import styled from "styled-components"
-
 import { ReactComponent as AssetLogo } from "../../assets/imgs/logo.svg"
 
-const Logo: React.FC = () => <AssetLogo />
+import Styled from "./styles"
 
-const StyledLogo = styled(Logo)``
+const Logo: React.FC = () => (
+  <Styled>
+    <AssetLogo />
+  </Styled>
+)
 
-export default StyledLogo
+export default Logo
