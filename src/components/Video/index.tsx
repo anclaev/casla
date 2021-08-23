@@ -5,8 +5,8 @@ interface IVideo {
   autoplay?: boolean
 }
 
-const defaultPoster = "/public/media/img/poster.png"
-const defaultDir = "/public/media/bg/"
+const defaultPoster = "/media/img/poster.png"
+const defaultDir = "/media/bg/"
 
 const Video: React.FC<IVideo> = ({
   index,
@@ -16,7 +16,7 @@ const Video: React.FC<IVideo> = ({
 }) => (
   <video autoPlay={autoplay} poster={poster}>
     <source
-      src={`${dir}${index}.mp4`}
+      src={`${dir}${index}/${index}.mp4`}
       type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
     />
   </video>

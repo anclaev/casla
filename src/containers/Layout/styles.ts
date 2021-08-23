@@ -1,5 +1,3 @@
-import Poster from "../../assets/imgs/poster.png"
-
 import styled from "styled-components"
 
 const StyledLayout = styled.div`
@@ -7,17 +5,23 @@ const StyledLayout = styled.div`
   grid-template-columns: minmax(60px, 260px) 1fr;
   height: inherit;
 
-  & > section {
+  & > section,
+  & > main,
+  & > main > div {
     height: inherit;
   }
 
-  & > section:nth-child(2) {
+  & > main,
+  & > main > section {
     position: relative;
-    background: url("${Poster}") center center / cover no-repeat;
+  }
+
+  & > main > div {
+    position: absolute;
     z-index: -2;
   }
 
-  & > section:nth-child(2):after {
+  & > main > div:after {
     content: "";
     position: absolute;
     top: 0;
@@ -25,8 +29,8 @@ const StyledLayout = styled.div`
     right: 0;
     bottom: 0;
     background: #000;
-    opacity: 0.3;
-    z-index: -1;
+    opacity: 0.2;
+    z-index: 0;
   }
 `
 
