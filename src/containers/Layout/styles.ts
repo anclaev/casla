@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const StyledLayout = styled.div`
   display: grid;
-  grid-template-columns: minmax(60px, 260px) 1fr;
+  grid-template-columns: minmax(max-content, max-content) 5fr;
   height: inherit;
 
   & > section,
