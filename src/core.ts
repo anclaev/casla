@@ -6,3 +6,7 @@ export interface IProps {
   dispatch?: Dispatch<any>
   location?: any
 }
+
+export interface IRoutes {
+  auth: boolean
+}
