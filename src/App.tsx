@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router"
 import { ConnectedRouter } from "connected-react-router"
 
 import { history, IState } from "./store"
-
 import Styles from "./styles"
 
 import Layout from "./containers/Layout"
