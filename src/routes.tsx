@@ -1,11 +1,11 @@
 import { Route, Switch } from "react-router"
 
-import { IRoutes } from "./core"
+import { IAuthProps } from "./core"
 
 import Error from "./pages/Error"
 import Hello from "./pages/Hello"
 
-const Routes: React.FC<IRoutes> = ({ auth }) =>
+const Routes: React.FC<IAuthProps> = ({ auth }) =>
   auth ? (
     <Switch>
       <Route render={() => <Error />} />

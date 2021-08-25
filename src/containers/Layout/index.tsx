@@ -1,7 +1,7 @@
 import { IntlProvider } from "react-intl"
 import { useSelector } from "react-redux"
 
-import { IProps } from "../../core"
+import { IAuthProps } from "../../core"
 import { IState } from "../../store"
 
 import Lang from "../Lang"
@@ -13,7 +13,7 @@ import { LOCALES } from "../../i18n/locales"
 
 import Styled from "./styles"
 
-const Layout: React.FC<IProps> = ({ children, dispatch }) => {
+const Layout: React.FC<IAuthProps> = ({ children, dispatch, auth }) => {
   const lang = useSelector((state: IState) => state.app.lang)
 
   return (
@@ -23,7 +23,7 @@ const Layout: React.FC<IProps> = ({ children, dispatch }) => {
       defaultLocale={LOCALES.ENGLISH}
     >
       <Styled>
-        <Menu />
+        <Menu auth={auth} />
         <main>
           {children}
           <Background />

@@ -7,6 +7,6 @@ export interface IProps {
   location?: any
 }
 
-export interface IRoutes {
+export interface IAuthProps extends IProps {
   auth: boolean
 }

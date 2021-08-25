@@ -16,7 +16,7 @@ const App: React.FC = () => {
   return (
     <ConnectedRouter history={history}>
       <Styles />
-      <Layout dispatch={dispatch} location={location}>
+      <Layout dispatch={dispatch} location={location} auth={auth}>
         <Routes auth={auth} />
       </Layout>
     </ConnectedRouter>
