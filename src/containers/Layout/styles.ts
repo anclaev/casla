@@ -3,12 +3,17 @@ import styled from "styled-components"
 const StyledLayout = styled.div`
   display: grid;
   grid-template-columns: minmax(max-content, max-content) 5fr;
-  height: inherit;
+  height: 100vh;
 
   & > section,
   & > main,
-  & > main > div {
+  & > main > div,
+  & > main > section {
     height: inherit;
+  }
+
+  & > main > section {
+    overflow-y: auto;
   }
 
   & > main,

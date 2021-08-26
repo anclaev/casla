@@ -1,10 +1,10 @@
-import { ReactComponent as AssetLogo } from "../../assets/imgs/logo.svg"
+import AssetLogo from "../../assets/imgs/logo.svg"
 
 import Styled from "./styles"
 
 const Logo: React.FC = () => (
   <Styled>
-    <AssetLogo />
+    <img src={AssetLogo} alt="Casla Logo" />
   </Styled>
 )
 
