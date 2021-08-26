@@ -14,6 +14,7 @@ const StyledLayout = styled.div`
 
   & > main > section {
     overflow-y: auto;
+    padding: 0 30px;
   }
 
   & > main,

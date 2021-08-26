@@ -1,3 +1,13 @@
-const Hello: React.FC = () => <section>Home Page</section>
+import Styled from "./styles"
+
+import AuthForm from "../../containers/AuthForm"
+
+const Hello: React.FC = () => {
+  return (
+    <Styled>
+      <AuthForm />
+    </Styled>
+  )
+}
 
 export default Hello

@@ -31,8 +31,17 @@ const Reset = css`
   body {
     height: 100%;
   }
-  input[type="text"] {
+
+  input {
     border-radius: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  input,
+  input::placeholder {
+    color: var(--color-text);
   }
 `
 

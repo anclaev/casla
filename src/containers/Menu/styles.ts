@@ -8,11 +8,20 @@ const StyledMenu = styled.section`
   & > div:first-child {
     margin: 20px 0;
   }
+
+  @media (max-width: 768px) {
+    width: 0;
+    padding: 0;
+
+    & * {
+      display: none;
+    }
+  }
 `
 
 export const StyledUnAuth = styled.div`
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
   min-width: 300px;
